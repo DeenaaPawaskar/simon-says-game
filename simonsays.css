@@ -1,0 +1,70 @@
+body{
+    text-align: center;
+    background-color: rgb(60, 60, 60);
+    color: rgb(175, 183, 189);
+}
+
+.button{
+    display:flex;
+    justify-content: center;
+
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid rgb(201, 205, 208);
+    margin: 1rem;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: rgb(34, 138, 34);
+}
+
+.purple{
+    background-color: blueviolet;
+}
+
+.flash{
+    background-color: aliceblue;
+}
+
+.userflash{
+    background-color: gray;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 200px; 
+    width: 300px;
+    background-color: rgba(51, 51, 51, 0.9); 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    z-index: 1;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.wrong{
+    background-color: red;
+}
