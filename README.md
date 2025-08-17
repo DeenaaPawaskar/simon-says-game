@@ -3,7 +3,7 @@ https://deenaapawaskar.github.io/simon-says-game/
 
 
 # Focus-Play
-Focus-Play Game is a fun, memory-based game where players must repeat an increasingly long sequence of colors in the correct order. One wrong move and it’s game over! Built using HTML, CSS, and JavaScript. 
+Focus-Play Game is a fun, memory-based game inspired from simon-says game which is a memory based game, where players must repeat an increasingly long sequence of colors in the correct order. One wrong move and it’s game over! Built using HTML, CSS, and JavaScript. 
 
 # 🎮 Focus-Play Memory Game
 
