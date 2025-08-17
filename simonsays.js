@@ -22,7 +22,7 @@ function btnFlash(btn){
   btn.classList.add("flash");
 
   setTimeout(function(){
-    btn.classList.remove("flash")},250);
+    btn.classList.remove("flash")},300);
 };
 
 function userFlash(btn){
@@ -32,20 +32,30 @@ function userFlash(btn){
       btn.classList.remove("userflash")},200);
   };
 
-function levelUp(){
-    
+async function levelUp(){
     level++;
     userSeq=[];
     h3.innerText = `Level ${level}`;
+
+    // Wait until popup finishes
+    await showPopup(`Level ${level}`, 1000);
+
+    await delay(1000);
 
     let randInd = Math.floor(Math.random()*4);
     let randColor = btns[randInd];
     let randbtn = document.querySelector(`.${randColor}`);
 
     gameSeq.push(randColor);
-    console.log(randColor)
+    console.log(randColor);
+
     btnFlash(randbtn);
 };
+
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 
 
 // event listener for button pressed
@@ -103,11 +113,29 @@ function reset(){
 }
 
 function score(){
-    let popup = document.createElement("div");
-    popup.classList.add("popup");
-    popup.innerText = `Your score is ${level-1}`;
-
-    document.body.appendChild(popup);
-
-    setTimeout(() => { popup.remove();}, 3000);
+        showPopup(`Game Over ! Your score is ${level} `, 2000);   
 }
+
+function showPopup(message, duration=2000) {
+    return new Promise((resolve) => {
+        let popup = document.createElement("div");
+        popup.classList.add("popup");
+        popup.innerText = message;
+
+        if(message.startsWith("Game Over")) {
+        popup.style.backgroundColor = "#FF8C00"; 
+        popup.style.color = "black";    
+        popup.style.border="2px , solid ,black";
+        popup.style.fontSize="2 rem";         
+        }
+
+
+        document.body.appendChild(popup);
+
+        setTimeout(() => { 
+            popup.remove(); 
+            resolve(); 
+        }, duration);
+    });
+}
+
