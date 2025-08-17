@@ -38,7 +38,8 @@ A simple, fun memory game made using JavaScript, HTML, and CSS. Repeat the color
 
 ## 📸 Preview
 
-<img width="1025" height="844" alt="image" src="https://github.com/user-attachments/assets/2569ee13-4814-44ec-b4ff-5372cda99808" />
+<img width="1323" height="851" alt="image" src="https://github.com/user-attachments/assets/c16e4e20-99bd-4423-beb2-73237632b47f" />
+
 
 
 ## 📦 Folder Structure
