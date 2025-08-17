@@ -1,7 +1,11 @@
-# simon-says-game
-Simon Says Game is a fun, memory-based game where players must repeat an increasingly long sequence of colors in the correct order. One wrong move and it’s game over! Built using HTML, CSS, and JavaScript.
+# game link 
+https://deenaapawaskar.github.io/simon-says-game/ 
 
-# 🎮 Simon Says Memory Game
+
+# Focus-Play
+Focus-Play Game is a fun, memory-based game where players must repeat an increasingly long sequence of colors in the correct order. One wrong move and it’s game over! Built using HTML, CSS, and JavaScript. 
+
+# 🎮 Focus-Play Memory Game
 
 A simple, fun memory game made using JavaScript, HTML, and CSS. Repeat the color pattern as it grows longer each level. How many can you remember?
 
@@ -39,5 +43,5 @@ A simple, fun memory game made using JavaScript, HTML, and CSS. Repeat the color
 
 ## 📦 Folder Structure
 simonsays.css
-simonsays.html
+index.html
 simonsays.js
