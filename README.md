@@ -26,8 +26,8 @@ A simple, fun memory game made using JavaScript, HTML, and CSS. Repeat the color
 ## 📁 Files
 
 - `index.html` – structure of the game
-- `style.css` – button styles, flash/wrong animations
-- `script.js` – game logic (you’re reading this!)
+- `simonsays.css` – button styles, flash/wrong animations
+- `simonsays.js` – game logic (you’re reading this!)
   
 ## 📜 Features
 
